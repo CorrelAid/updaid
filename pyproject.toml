@@ -1,0 +1,25 @@
+[project]
+name = "updaid"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "infisicalsdk>=1.0.4",
+    "pytest>=8.3.5",
+    "python-dotenv>=1.0.1",
+    "pyyaml>=6.0.2",
+    "modal>=0.73.91",
+    "pre-commit>=4.1.0",
+]
+
+[tool.uv.sources]
+lib = { path = "src/lib" }
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["lib*"]
