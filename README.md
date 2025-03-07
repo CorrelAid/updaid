@@ -2,7 +2,7 @@
 
 This code implements an automated dependency update checker that runs weekly using Modal to monitor both infrastructure-as-code repositories for outdated dependencies. It sends email reports when major or minor version updates are detected.
 
-Specifically, it compares image versions in docker compose files, Dockerfiles and txt against the latest release in the GitHub repository of a dependency.
+Specifically, it compares image versions in docker compose files, Dockerfiles or .txt against the latest release in the GitHub repository of a dependency.
 
 ## Dev Setup
 
