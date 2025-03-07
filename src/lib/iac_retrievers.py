@@ -41,7 +41,6 @@ def get_current_version(owner: str, repo: str, path: str, service_name: str):
         image_version = extract_version(response.text)
     elif ".txt" in path:
         image_version = response.text
-        print(image_version)
     else:
         yaml_content = response.text.replace("{{", "").replace("}}", "")
         parsed_yaml = yaml.safe_load(yaml_content)
